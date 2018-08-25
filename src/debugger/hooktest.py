@@ -2,7 +2,7 @@
 # Copyright: (C) 2018 Lovac42
 # Support: https://github.com/lovac42/Le_Petit_Debugger
 # License: GNU GPL, version 3 or later; http://www.gnu.org/copyleft/gpl.html
-# Version: 0.0.1
+# Version: 0.0.2
 
 
 from aqt import mw
@@ -122,6 +122,7 @@ class HookTest:
     def onPrepareQA(self, html, card, context): #v2.1
         if self.hookers['ALL'][0] or self.hookers['PQA'][0]:
             self.log('Hook:%s context="%s"'%(self.hookers['PQA'][1],context))
+        return html
 
 
 mw.db.hooks=HookTest()
