@@ -2,7 +2,7 @@
 # Copyright: (C) 2018 Lovac42
 # Support: https://github.com/lovac42/Le_Petit_Debugger
 # License: GNU GPL, version 3 or later; http://www.gnu.org/copyleft/gpl.html
-# Version: 0.0.2
+# Version: 0.0.3
 
 
 from aqt import mw
@@ -44,19 +44,19 @@ class HookTest:
 
 
     def __init__(self):
-        addMenuItem('Debug::Log Hookers', self.hookers['ALL'][1], lambda:self.toggle('ALL'))
-        addMenuItem('Debug::Log Hookers', self.hookers['R'][1], lambda:self.toggle('R'))
-        addMenuItem('Debug::Log Hookers', self.hookers['Q'][1], lambda:self.toggle('Q'))
-        addMenuItem('Debug::Log Hookers', self.hookers['A'][1], lambda:self.toggle('A'))
-        addMenuItem('Debug::Log Hookers', self.hookers['PQA'][1], lambda:self.toggle('PQA')) #v2.1
-        addMenuItem('Debug::Log Hookers', self.hookers['NC'][1], lambda:self.toggle('NC'))
-        addMenuItem('Debug::Log Hookers', self.hookers['BSC'][1], lambda:self.toggle('BSC'))
-        addMenuItem('Debug::Log Hookers', self.hookers['ASC'][1], lambda:self.toggle('ASC'))
-        addMenuItem('Debug::Log Hookers', self.hookers['PL'][1], lambda:self.toggle('PL'))
-        addMenuItem('Debug::Log Hookers', self.hookers['UP'][1], lambda:self.toggle('UP'))
-        addMenuItem('Debug::Log Hookers', self.hookers['US'][1], lambda:self.toggle('US'))
-        addMenuItem('Debug::Log Hookers', self.hookers['CL'][1], lambda:self.toggle('CL'))
-        addMenuItem('Debug::Log Hookers', self.hookers['L'][1], lambda:self.toggle('L'))
+        addMenuItem('Debug::Log Hookers', self.hookers['ALL'][1], lambda:self.toggle('ALL'), checkable=True)
+        addMenuItem('Debug::Log Hookers', self.hookers['R'][1], lambda:self.toggle('R'), checkable=True)
+        addMenuItem('Debug::Log Hookers', self.hookers['Q'][1], lambda:self.toggle('Q'), checkable=True)
+        addMenuItem('Debug::Log Hookers', self.hookers['A'][1], lambda:self.toggle('A'), checkable=True)
+        addMenuItem('Debug::Log Hookers', self.hookers['PQA'][1], lambda:self.toggle('PQA'), checkable=True) #v2.1
+        addMenuItem('Debug::Log Hookers', self.hookers['NC'][1], lambda:self.toggle('NC'), checkable=True)
+        addMenuItem('Debug::Log Hookers', self.hookers['BSC'][1], lambda:self.toggle('BSC'), checkable=True)
+        addMenuItem('Debug::Log Hookers', self.hookers['ASC'][1], lambda:self.toggle('ASC'), checkable=True)
+        addMenuItem('Debug::Log Hookers', self.hookers['PL'][1], lambda:self.toggle('PL'), checkable=True)
+        addMenuItem('Debug::Log Hookers', self.hookers['UP'][1], lambda:self.toggle('UP'), checkable=True)
+        addMenuItem('Debug::Log Hookers', self.hookers['US'][1], lambda:self.toggle('US'), checkable=True)
+        addMenuItem('Debug::Log Hookers', self.hookers['CL'][1], lambda:self.toggle('CL'), checkable=True)
+        addMenuItem('Debug::Log Hookers', self.hookers['L'][1], lambda:self.toggle('L'), checkable=True)
 
 
 

@@ -42,8 +42,9 @@ def addMenu(fullName):
         mw.customMenus[menuName].addMenu(subMenu)
 
 
-def addMenuItem(menuName, text, function, keys=None):
+def addMenuItem(menuName, text, function, keys=None, checkable=False):
     action = QAction(text, mw)
+    action.setCheckable(checkable)
 
     if keys:
         action.setShortcut(QKeySequence(keys))

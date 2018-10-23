@@ -2,7 +2,7 @@
 # Copyright: (C) 2018 Lovac42
 # Support: https://github.com/lovac42/Le_Petit_Debugger
 # License: GNU GPL, version 3 or later; http://www.gnu.org/copyleft/gpl.html
-# Version: 0.0.1
+# Version: 0.0.2
 
 
 import sys
@@ -14,7 +14,7 @@ class Monitor:
     monitor=False
 
     def __init__(self):
-        addMenuItem('Debug', 'Monitor STDOUT + STDERR', self.toggle)
+        addMenuItem('Debug', 'Monitor STDOUT + STDERR', self.toggle, checkable=True)
 
     def toggle(self):
         self.monitor=not self.monitor
