@@ -57,6 +57,8 @@ def addMenuItem(menuName, text, function, keys=None, checkable=False):
         mw.form.menuEdit.addAction(action)
     elif menuName == 'Tools':
         mw.form.menuTools.addAction(action)
+    elif menuName == 'Plugins':
+        mw.form.menuPlugins.addAction(action)
     elif menuName == 'Help':
         mw.form.menuHelp.addAction(action)
     else:
